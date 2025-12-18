@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Isha mulgi</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+    * {
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("https://wallpapers.com/images/hd/hello-kitty-pink-floral-pattern-g968uhy1arero7xj.jpg") no-repeat center/cover;
+    }
+
+    /* -------- PAGE 1 -------- */
+
+    #page1 {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login-box {
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(15px);
+        padding: 35px;
+        width: 340px;
+        border-radius: 18px;
+        box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        text-align: center;
+        animation: fadeIn 1s ease;
+    }
+
+    h2 {
+        color: #ff4d88;
+        margin-bottom: 10px;
+    }
+
+    .first-hint {
+        font-size: 12px;
+        background: rgba(255,255,255,0.65);
+        padding: 12px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        line-height: 1.4;
+        color: #333;
+    }
+
+    input {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    input:focus {
+        box-shadow: 0 0 0 2px #ff4d88;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        background: linear-gradient(135deg, #ff4d88, #ff85b3);
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button:hover {
+        transform: scale(1.05);
+    }
+
+    .second-hint {
+        display: none;
+        font-size: 12px;
+        background: rgba(255,255,255,0.6);
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+
+    /* -------- PAGE 2 -------- */
+
+    #page2 {
+        display: none; /* 🔴 VERY IMPORTANT */
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(135deg,#ffd1e8,#ff9ecb);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .page2-box {
+        background: rgba(255,255,255,0.35);
+        backdrop-filter: blur(15px);
+        padding: 40px 30px;
+        border-radius: 22px;
+        width: 380px;
+        text-align: center;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.25);
+        animation: fadeIn 1s ease;
+    }
+
+    .page2-box h1 {
+        color: #ff2f7d;
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .page2-box img {
+        width: 200px;
+        border-radius: 18px;
+        margin-bottom: 20px;
+    }
+
+    .page2-box p {
+        font-size: 14px;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 12px;
+    }
+
+    .question {
+        margin-top: 18px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #ff2f7d;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* -------- PAGE 3 -------- */
+
+/* -------- PAGE 3 -------- */
+
+#page3 {
+    display: none; /* ✅ ONLY none here */
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#ffc1dc,#ff9ecb);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.page3-box {
+    background: rgba(255,255,255,0.4);
+    backdrop-filter: blur(16px);
+    padding: 45px 35px;
+    border-radius: 25px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+    animation: fadeIn 1s ease;
+}
+
+.page3-box h1 {
+    color: #ff2f7d;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.page3-box input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.page3-box button {
+    padding: 12px 26px;
+    border-radius: 14px;
+    border: none;
+    background: #ff4d88;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.page3-box button:hover {
+    transform: scale(1.1);
+}
+
+/* -------- PAGE 4 -------- */
+
+#page4 {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: url("https://thumbs.dreamstime.com/b/chicken-shawarma-doner-durum-dark-slate-barbecue-fire-background-meat-wraps-vegetables-black-stone-board-snack-cooking-367404141.jpg")
+                no-repeat center/cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.page4-box {
+    background: rgba(0,0,0,0.55);
+    backdrop-filter: blur(10px);
+    padding: 40px 35px;
+    border-radius: 22px;
+    width: 400px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.6);
+}
+
+.page4-box p {
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.page4-box h2 {
+    color: #ff9ecb;
+    margin: 20px 0 10px;
+}
+
+.page4-box small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    opacity: 0.85;
+}
+
+/* -------- PAGE 5 -------- */
+
+#page5 {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: url("https://wallpapers.com/images/hd/hello-kitty-pink-floral-pattern-g968uhy1arero7xj.jpg")
+                no-repeat center/cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.page5-box {
+    background: rgba(255,255,255,0.45);
+    backdrop-filter: blur(15px);
+    padding: 40px 30px;
+    border-radius: 24px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
+.cute-text {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.img-row {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.img-row img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.page5-box h2 {
+    color: #ff2f7d;
+    margin-bottom: 10px;
+}
+
+/* -------- PAGE 6 -------- */
+
+#page6 {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#ffb6d5,#ffd6e8);
+    align-items: center;
+    justify-content: center;
+}
+
+.page6-box {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    border-radius: 24px;
+    width: 420px;
+    text-align: center;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+}
+
+.page6-box h1 {
+    color: #ff2f7d;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.question-box {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 16px;
+    background: rgba(255,255,255,0.6);
+}
+
+.question-box p {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* -------- PAGE 7 (FINAL) -------- */
+
+#page7 {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg,#ff9ecb,#ffd1e8);
+    align-items: center;
+    justify-content: center;
+}
+
+.page7-box {
+    background: rgba(255,255,255,0.5);
+    backdrop-filter: blur(18px);
+    padding: 50px 40px;
+    border-radius: 28px;
+    width: 480px;
+    text-align: center;
+    box-shadow: 0 35px 70px rgba(0,0,0,0.3);
+    animation: fadeIn 1.2s ease;
+}
+
+.page7-box p {
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 18px;
+    color: #333;
+}
+
+.page7-box h1 {
+    margin-top: 30px;
+    font-size: 44px;
+    font-weight: 800;
+    color: #ff2f7d;
+    letter-spacing: 2px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<!-- ========= PAGE 1 ========= -->
+<div id="page1">
+    <div class="login-box">
+        <h2>Hey Isha</h2>
+
+        <div class="first-hint">
+            The solution is concealed within an arithmetic illusion.
+            An amalgamation of months and dates, interwoven with the day destiny made us collide,
+            multiplied by my digits, and diminished by the terminal four numerals of yours.
+            <br><br>
+            ps: ik you like hello kitty (kinda looks like you tbh)
+        </div>
+
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Unlock</button>
+
+        <div class="second-hint" id="secondHint">
+            <strong>Hint:</strong><br>
+            month + day + month + day + meeting day × my number − last 4 digit of your number
+        </div>
+    </div>
+</div>
+
+<!-- ========= PAGE 2 ========= -->
+<div id="page2">
+    <div class="page2-box">
+        <h1>welcome babe 💗</h1>
+
+        <!-- 🔴 PASTE IMAGE LINK BELOW -->
+        <img src="https://i.postimg.cc/N0XTbLd9/Gemini-Generated-Image-cy7g1scy7g1scy7g.png" alt="Isha">
+
+        <p>ummmm i miss you like a lot and it honestly sucks without you and i wish we could meet every day.</p>
+        <p>i miss your cute face, the way your eyes get wider, and your eye squint.</p>
+        <p>i miss how your glasses are basically on a death sentence whenever i'm around you.</p>
+        <p>i miss the way you adore me, how adorable you look, and the way you smile.</p>
+
+        <div class="question">how many idli did i eat?</div>
+        <input type="number" id="idliAnswer" placeholder="your answer">
+        <button onclick="checkIdli()">submit</button>
+    </div>
+</div>
+
+<!-- ========= PAGE 3 ========= -->
+<div id="page3">
+    <div class="page3-box">
+        <h1>HOW MANY TIMES DID YOU BLOCK ME?</h1>
+
+        <input type="number" id="blockCount" placeholder="your guess">
+        <button onclick="checkBlockCount()">submit</button>
+    </div>
+</div>
+
+<!-- ========= PAGE 4 ========= -->
+<div id="page4">
+    <div class="page4-box">
+        <p>
+            ummm i wish to have a really good shawarma with you like really good.<br>
+            the one i tasted was very bad and you hype it up a lot<br>
+            soo lets see how it’ll taste
+        </p>
+
+        <h2>do you like me ??</h2>
+
+        <input type="password" id="likeAnswer" placeholder="type carefully">
+        <button onclick="checkLike()">submit</button>
+
+        <small>
+            ps: agar maybe likh diya tho vahi aake marunga and marathi sachin banna padega mereko lol
+        </small>
+    </div>
+</div>
+
+<!-- ========= PAGE 5 ========= -->
+<div id="page5">
+    <div class="page5-box">
+        <p class="cute-text">
+            umm i cannot belive how my kuchi puchi chatpati looks cute
+        </p>
+
+        <div class="img-row">
+            <img src="https://i.postimg.cc/3RxdDR0d/IMG-20251203-002749-526.jpg">
+            <img src="https://i.postimg.cc/x1V83gNp/IMG-20250914-WA0073.jpg">
+        </div>
+
+        <h2>our anniversary date</h2>
+
+        <input type="password" id="anniversary">
+        <button onclick="checkAnniversary()">submit</button>
+    </div>
+</div>
+
+<!-- ========= PAGE 6 ========= -->
+<div id="page6">
+    <div class="page6-box">
+        <h1>if i could explain you in a single song</h1>
+
+        <iframe data-testid="embed-iframe"
+            style="border-radius:12px; margin:20px 0;"
+            src="https://open.spotify.com/embed/track/1dB1kzLOjTcmSHttRd8bnV?utm_source=generator"
+            width="100%" height="352"
+            frameBorder="0"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+        </iframe>
+
+        <div class="question-box">
+            <p><strong>what is!!</strong></p>
+            <input type="password" id="songAnswer">
+            <button onclick="checkSong()">submit</button>
+        </div>
+    </div>
+</div>
+
+<!-- ========= PAGE 7 ========= -->
+<div id="page7">
+    <div class="page7-box">
+        <p>
+            I like the way you dress<br>
+            I hope to fold those dresses for you one day<br>
+            And share mine in the same closet
+        </p>
+
+        <p>
+            I hope to pick what you wear someday<br>
+            And you decide mine
+        </p>
+
+        <p>
+            I hope to iron yours as you get ready<br>
+            I want it to be you whom I call when I forget my towel
+        </p>
+
+        <p>
+            And I want to see you when I wake up each morning<br>
+            And your face when I wake up
+        </p>
+
+        <h1>I LOVE YOU ISHA!!!</h1>
+    </div>
+</div>
+
+
+
+
+
+
+<script>
+    const correctPassword = "263771297667";
+    let attempts = 0;
+
+    function checkPassword() {
+        const input = document.getElementById("password").value;
+
+        if (input === correctPassword) {
+            document.getElementById("page1").style.display = "none";
+            document.getElementById("page2").style.display = "flex";
+        } else {
+            attempts++;
+            alert("STUPID.... PASSWORD IS WRONG");
+            if (attempts >= 1) {
+                document.getElementById("secondHint").style.display = "block";
+            }
+        }
+    }
+
+    function checkIdli() {
+    if (document.getElementById("idliAnswer").value === "1") {
+        document.getElementById("page2").style.display = "none";
+        document.getElementById("page3").style.display = "flex";
+    } else {
+        alert("you ate the second one remember??");
+    }
+}
+
+    
+  let blockAttempts = 0;
+
+function checkBlockCount() {
+    blockAttempts++;
+
+    if (blockAttempts < 3) {
+        alert("WRONG! BAI");
+    } else {
+    alert("im jk be i lost count");
+    document.getElementById("page3").style.display = "none";
+    document.getElementById("page4").style.display = "flex";
+    }
+}
+
+function checkLike() {
+    const val = document.getElementById("likeAnswer").value.toLowerCase();
+
+    if (val === "yes") {
+        document.getElementById("page4").style.display = "none";
+        document.getElementById("page5").style.display = "flex";
+    } else {
+        alert("the password issssssssssssssss drum rolllll yes");
+    }
+}
+
+function checkAnniversary() {
+    const val = document.getElementById("anniversary").value;
+
+    if (val === "15") {
+        document.getElementById("page5").style.display = "none";
+        document.getElementById("page6").style.display = "flex";
+    } else {
+        alert("just the date");
+    }
+}
+
+function checkSong() {
+    const val = document.getElementById("songAnswer").value.toLowerCase();
+
+    if (val === "love") {
+        document.getElementById("page6").style.display = "none";
+        document.getElementById("page7").style.display = "flex";
+    } else {
+        alert("its a song that we both like");
+    }
+}
+
+
+
+
+</script>
+
+</body>
+</html>
